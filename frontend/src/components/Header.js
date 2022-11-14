@@ -1,6 +1,7 @@
 import { getUserInfo } from '../localStorage';
 
 const Header = {
+  after_render: () => {},
   render: () => {
     const { name } = getUserInfo();
     return ` 
@@ -17,6 +18,6 @@ const Header = {
     <a href="/#/cart">Cart</a>
   </div>`;
   },
-  after_render: () => {},
-};
+}
+
 export default Header;
