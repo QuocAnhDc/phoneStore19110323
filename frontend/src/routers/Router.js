@@ -8,6 +8,9 @@ import ProfileScreen from '../srceens/ProfileScreen';
 import ShippingScreen from '../srceens/ShippingScreen';
 import PaymentScreen from '../srceens/PaymentScreen';
 import PlaceOrderScreen from '../srceens/PlaceOrderScreen';
+import OrderScreen from '../srceens/OrderScreen';
+import DashboardScreen from '../srceens/DashboardScreen';
+import ProductListScreen from '../srceens/ProductListScreen';
 import Header from '../components/Header';
 import { parseRequestUrl, showLoading, hideLoading } from '../utils';
 
@@ -15,6 +18,7 @@ import { parseRequestUrl, showLoading, hideLoading } from '../utils';
 const routes = {
   '/': HomeScreen,
   '/product/:id': ProductScreen,
+  '/order/:id': OrderScreen,
   '/cart': CartScreen,
   '/cart/:id' : CartScreen,
   '/signin': SigninScreen,
@@ -23,6 +27,8 @@ const routes = {
   '/shipping': ShippingScreen,
   '/payment': PaymentScreen,
   '/placeorder': PlaceOrderScreen,
+  '/dashboard': DashboardScreen,
+  '/productlist': ProductListScreen,
 };
 
 const router = async () => {

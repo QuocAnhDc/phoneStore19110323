@@ -1,7 +1,7 @@
 export default {
   products: [
     {
-      _id: '1',
+      _id: '1111111111111111111111111',
       name: 'Iphone 13 Pro Max',
       category: 'Smart Phone',
       image: '/images/phone1.jpeg',
@@ -12,7 +12,7 @@ export default {
       countInStock: 6,
     },
     {
-      _id: '2',
+      _id: '2213123231232131231231',
       name: 'Iphone 14 Pro Max',
       category: 'Smart Phone',
       image: '/images/phone2.jpeg',
