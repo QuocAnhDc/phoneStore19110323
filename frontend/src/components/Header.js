@@ -1,12 +1,12 @@
 import { getUserInfo } from '../localStorage';
 
-const Header = {
+const Header = {  
   after_render: () => {},
   render: () => {
     const { name } = getUserInfo();
     return ` 
   <div class="brand">
-    <a href="/#/">jsamazona</a>
+    <a href="/#/">Phone Store</a>
   </div>
   <div>
   ${
