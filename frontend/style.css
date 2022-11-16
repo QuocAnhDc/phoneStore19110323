@@ -452,3 +452,10 @@ td {
 .tr-action {
   width: 10rem;
 }
+/* error-permission */
+.error-permission{
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  
+}

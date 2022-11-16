@@ -11,12 +11,15 @@ import PlaceOrderScreen from '../srceens/PlaceOrderScreen';
 import OrderScreen from '../srceens/OrderScreen';
 import DashboardScreen from '../srceens/DashboardScreen';
 import ProductListScreen from '../srceens/ProductListScreen';
+import ProductEditScreen from '../srceens/ProductEditScreen';
+
 import Header from '../components/Header';
 import { parseRequestUrl, showLoading, hideLoading } from '../utils';
 
 
 const routes = {
   '/': HomeScreen,
+  '/product/:id/edit': ProductEditScreen,
   '/product/:id': ProductScreen,
   '/order/:id': OrderScreen,
   '/cart': CartScreen,
@@ -29,6 +32,7 @@ const routes = {
   '/placeorder': PlaceOrderScreen,
   '/dashboard': DashboardScreen,
   '/productlist': ProductListScreen,
+  '/error': Error404Screen,
 };
 
 const router = async () => {

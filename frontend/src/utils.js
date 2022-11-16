@@ -1,4 +1,5 @@
-import { getCartItems } from './localStorage';
+
+import { getCartItems, getUserInfo} from './localStorage';
 
 export const parseRequestUrl = () => {
   const url = document.location.hash.toLowerCase();
@@ -6,7 +7,7 @@ export const parseRequestUrl = () => {
   return {
     resource: request[1],
     id: request[2],
-    action: request[3],
+    verb: request[3],
   };
 };
 
@@ -50,3 +51,10 @@ export const redirectUser = () => {
     document.location.hash = '/';
   }
 };
+
+export const checkRedirectUser = () =>{
+  const { isAdmin } = getUserInfo();
+  if(!isAdmin) {
+    document.location.hash = '/error'
+  }
+}
