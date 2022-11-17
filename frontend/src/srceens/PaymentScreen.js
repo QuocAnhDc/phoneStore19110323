@@ -28,16 +28,6 @@ const PaymentScreen = {
             <h1>Payment</h1>
           </li>
           <li>
-            <div>
-              <input type="radio"
-              name="payment-method"
-              id="paypal"
-              value="Paypal"
-              checked />
-              <label for="paypal" >PayPal</label>
-             </div> 
-          </li>
-          <li>
           <div>
             <input type="radio"
             name="payment-method"

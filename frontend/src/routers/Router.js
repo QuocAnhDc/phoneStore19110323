@@ -12,6 +12,7 @@ import OrderScreen from '../srceens/OrderScreen';
 import DashboardScreen from '../srceens/DashboardScreen';
 import ProductListScreen from '../srceens/ProductListScreen';
 import ProductEditScreen from '../srceens/ProductEditScreen';
+import OrderListScreen from '../srceens/OrderListScreen';
 
 import Header from '../components/Header';
 import { parseRequestUrl, showLoading, hideLoading } from '../utils';
@@ -33,6 +34,7 @@ const routes = {
   '/dashboard': DashboardScreen,
   '/productlist': ProductListScreen,
   '/error': Error404Screen,
+  '/orderlist': OrderListScreen,
 };
 
 const router = async () => {
